@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.sec1,
+.sec2,
+.sec3,
+.sec4,
+.sec5 {
+    position: relative;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.sec1 {
+    background-color: hsl(263, 55%, 52%);
+    grid-area: sec1;
+}
+
+.section>p {
+    margin-top: 10px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.section>p {
+    margin-top: 20px;
+}
+
+.sec2 {
+    grid-area: sec2;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.sec3 {
+    grid-area: sec3;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.sec4 {
+    grid-area: sec4;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.sec5 {
+    grid-area: sec5;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.about .image {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+.sec1-bg {
+    position: absolute;
+    top: 0;
+    right: 6rem;
+    z-index: 1;
+}
+
+.sec1 h1,
+.sec5 h1,
+.sec2 h1 {
+    color: white;
+    /* z-index: 5; */
+}
+
+.sec1 h2,
+.sec5 h2,
+.sec2 h2 {
+    z-index: 10;
+    color: white;
+}
+
+.sec1 .section>p,
+.sec5 .section>p,
+.sec2 .section>p {
+    color: hsla(0, 0%, 100%, 50%);
+}
+
+.sec1 .identity p,
+.sec5 .identity p,
+.sec2 .identity p {
+    color: hsla(0, 0%, 100%, 50%);
+}
+
+.sec3 h1,
+.sec4 h1 {
+    color: hsl(217, 19%, 35%);
+}
+
+.sec3 h2,
+.sec4 h2 {
+    color: hsl(217, 19%, 35%);
+}
+
+.sec3 .identity p,
+.sec4 .identity p {
+    color: hsl(219, 29%, 14%);
+}
+
+.sec3 .section>p,
+.sec4 .section>p {
+    color: hsl(219, 29%, 14%);
+}
+
+h2 {
+    font-size: 19px;
+    margin-top: 15px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+}
+
+.lhs {
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.rhs {
+    width: 25%;
+    height: 100%;
+}
+
+
+/* .sec3 {
+    height: 100%;
+} */
+
+.gridbox-top,
+.gridbox-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec1,
+.sec5 {
+    width: 67%;
+}
+
+.sec2,
+.sec4 {
+    width: 30%;
+}
+
+@media (max-width:560px) {
+    main {
+        padding: 20px 0;
+        height: 100%;
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sec1-bg {
+        right: 15px;
+    }
+    .rhs,
+    .lhs,
+    .sec1,
+    .sec2,
+    .sec3,
+    .sec4,
+    .sec5 {
+        width: 100%;
+    }
+    .gridbox-bottom,
+    .gridbox-top {
+        gap: 20px;
+        flex-direction: column;
+    }
+}
